@@ -22,8 +22,8 @@ public class Api_SerImplementation implements ApiService {
         return repo.findAll();
     }
     @Override
-    public fetchdataById(int id){
-        return repo.find
+    public Optional<Api> fetchdataById(int id){
+        return repo.findDataById(id);
     }
 
 }
