@@ -27,9 +27,9 @@ public class API_Controller{
      public List<Api> fetchRecord(){
         return Aser.fetchRecord();
      }
-//for to find data by id
-     @GetMapping("/fetchdatabyid/{id}")
-     public Optional<Api> fetchdataById(@PathVariable int id){
-     return Aser.fetchdataById(id);
-}
+// //for to find data by id
+//      @GetMapping("/fetchdatabyid/{id}")
+//      public Optional<Api> fetchdataById(@PathVariable int id){
+//      return Aser.fetchdataById(id);
+// }
 }
