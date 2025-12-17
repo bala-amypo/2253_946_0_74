@@ -20,6 +20,11 @@ public class API_Controller{
 
      @PostMapping("/adddata")
      public Api createData(@RequestBody Api a){
-        return 
+        return Aser.createData(a);
+     }
+
+     @GetMapping("/fetchdata")
+     public List<Api> fetchRecord(){
+        return Aser.fetchRecord();
      }
 }
