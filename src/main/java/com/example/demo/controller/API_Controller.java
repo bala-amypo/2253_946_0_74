@@ -15,6 +15,11 @@ import com.example.demo.service.StudentService;
 @RestController
 public class API_Controller{
     @Autowired
-    API_Controller api;
-    
+   Api_service Aser;
+     
+
+     @PostMapping("/adddata")
+     public Api createData(@RequestBody Api a){
+        return 
+     }
 }
