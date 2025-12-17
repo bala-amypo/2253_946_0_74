@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 
 import java.util.List;
+import org.springframework.beans.factory.annotation.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -32,6 +33,7 @@ public class API_Controller{
 //      public Optional<Api> fetchdataById(@PathVariable int id){
 //      return Aser.fetchdataById(id);
 // }
-@PostMapping("/updatedata/{id}")
+@PutMapping("/updatedata/{id}")
+public fet
 
 }
