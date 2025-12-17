@@ -14,12 +14,12 @@ public class Api_SerImplementation implements ApiService {
     Api_Repository repo;
 
     @Override
-    public Api createData("Api a"){
-        return repo.createData(a);
+    public Api createData(Api a){
+        return repo.save(a);
     }
     @Override 
-    public Api fetchRecord(){
-        return repo.fetchRecord();
+    public List<Api> fetchRecord(){
+        return repo.findAll();
     }
 
 }
