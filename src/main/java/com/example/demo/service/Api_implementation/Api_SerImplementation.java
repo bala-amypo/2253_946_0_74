@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.entity.Api;
 import com.example.demo.repository.Api_Repository;
 
-@service
+@Service
 public class Api_SerImplementation implements ApiService {
     @Autowired 
     Api_Repository repo;

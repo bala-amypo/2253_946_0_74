@@ -15,7 +15,7 @@ import com.example.demo.service.ApiService;
 @RestController
 public class API_Controller{
     @Autowired
-   Api_service Aser;
+   ApiService Aser;
      
 
      @PostMapping("/adddata")

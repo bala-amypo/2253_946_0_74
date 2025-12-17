@@ -1,12 +1,13 @@
 package com.example.demo.entity;
 import jakarta.persistence.*;
 @Entity
-public class Student{
-    @Id
+public class Api{
+  
     private Long id;
     private String stuname;
     private String stuemail;
     private float cgpa;
+    
     public Long getId(){
         return id;
     }
@@ -32,14 +33,14 @@ public class Student{
         this.cgpa=cgpa;
     }
 
-    public Student(Long id, String stuname, String stuemail, float cgpa) {
+    public Api(Long id, String stuname, String stuemail, float cgpa) {
         this.id = id;
         this.stuname = stuname;
         this.stuemail = stuemail;
         this.cgpa = cgpa;
     }
 
-    public Student(){
+    public Api(){
 }
 
 
