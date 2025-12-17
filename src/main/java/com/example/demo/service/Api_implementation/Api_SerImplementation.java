@@ -9,3 +9,6 @@ import com.example.demo.entity.Student;
 import com.example.demo.repository.StudentRepository;
 
 @service
+public class Api_SerImplementation implements Api_Repository {
+    @
+}
