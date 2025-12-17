@@ -14,5 +14,12 @@ public class Api_SerImplementation implements ApiService {
     Api_Repository repo;
 
     @Override
-    public Api createData("/adddata")
+    public Api createData("Api a"){
+        return repo.createData(a);
+    }
+    @Override 
+    public Api fetchRecord(){
+        return repo.fetchRecord();
+    }
+
 }
