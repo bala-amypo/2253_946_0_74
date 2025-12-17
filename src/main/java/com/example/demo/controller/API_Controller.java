@@ -29,6 +29,7 @@ public class API_Controller{
      }
 //for to find data by id
      @GetMapping("/fetchdatabyid/{id}")
-     public <Api> fetchdataById(@PathVariable int id)
+     public Optional<Api> fetchdataById(@PathVariable int id){
      return Aser.fetchdataById(id);
+}
 }
