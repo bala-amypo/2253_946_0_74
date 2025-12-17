@@ -30,7 +30,7 @@ public class API_Controller{
      }
  //for to find data by id
      @GetMapping("/fetchdatabyid/{id}")
-     public Optional<Api> fetchDataById(@PathVariable int id){
+     public Optional<Api> fetchDataById(@PathVariable long id){
      return Aser.fetchDataById(id);
 }
 @PutMapping("/updatedata/{id}")

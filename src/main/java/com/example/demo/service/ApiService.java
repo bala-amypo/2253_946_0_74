@@ -4,4 +4,6 @@ import com.example.demo.entity.Api;
 public interface ApiService {
  Api createData(Api a);
    List<Api> fetchRecord();
+   Optional<Api>fetchDataById();
+
 }
