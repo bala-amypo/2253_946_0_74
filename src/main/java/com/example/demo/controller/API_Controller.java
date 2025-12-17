@@ -28,12 +28,18 @@ public class API_Controller{
      public List<Api> fetchRecord(){
         return Aser.fetchRecord();
      }
-// //for to find data by id
-//      @GetMapping("/fetchdatabyid/{id}")
-//      public Optional<Api> fetchdataById(@PathVariable int id){
-//      return Aser.fetchdataById(id);
-// }
+ //for to find data by id
+     @GetMapping("/fetchdatabyid/{id}")
+     public Optional<Api> fetchDataById(@PathVariable int id){
+     return Aser.fetchDataById(id);
+}
 @PutMapping("/updatedata/{id}")
-public fet
+public String fetchdataById(@PathVariable int id ,@RequestBody Api a){
+   a.setId(id);
+   ser.createData(a);
+
+   return "Updated succesfully"
+}
+
 
 }
