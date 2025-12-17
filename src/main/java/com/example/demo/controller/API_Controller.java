@@ -2,7 +2,7 @@ package com.example.demo.controller;
 
 
 import java.util.List;
-import org.springframework.beans.factory.annotation.*;
+import org.springframework.web.bind.annotation.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -34,7 +34,7 @@ public class API_Controller{
      return Aser.fetchDataById(id);
 }
 @PutMapping("/updatedata/{id}")
-public String fetchdataById(@PathVariable int id ,@RequestBody Api a){
+public String UpdateDataById(@PathVariable int id ,@RequestBody Api a){
    a.setId(id);
    ser.createData(a);
 
