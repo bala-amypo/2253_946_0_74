@@ -32,4 +32,6 @@ public class API_Controller{
 //      public Optional<Api> fetchdataById(@PathVariable int id){
 //      return Aser.fetchdataById(id);
 // }
+@PostMapping("/updatedata/{id}")
+
 }
