@@ -21,5 +21,9 @@ public class Api_SerImplementation implements ApiService {
     public List<Api> fetchRecord(){
         return repo.findAll();
     }
+    @Override
+    public fetchdataById(int id){
+        return repo.find
+    }
 
 }

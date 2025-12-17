@@ -29,5 +29,6 @@ public class API_Controller{
      }
 
      @GetMapping("/fetchdatabyid")
-     public  fetchdataById(@PathVa)
+     public  fetchdataById(@PathVariable int id)
+     return Aser.fetchdataById(id);
 }
