@@ -27,4 +27,7 @@ public class API_Controller{
      public List<Api> fetchRecord(){
         return Aser.fetchRecord();
      }
+
+     @GetMapping("/fetchdatabyid")
+     public  fetchdataById(@PathVa)
 }
