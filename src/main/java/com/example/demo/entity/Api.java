@@ -3,11 +3,12 @@ import jakarta.persistence.*;
 @Entity
 public class Api{
   
+  @Id
     private Long id;
     private String stuname;
     private String stuemail;
     private float cgpa;
-    @Id
+    
     public Long getId(){
         return id;
     }
