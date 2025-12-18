@@ -51,7 +51,10 @@ public String UpdateDataById(@PathVariable int id ,@RequestBody Api a){
 public String deleteDataById(@PathVariable int id){
    Optional <Api>api=ser.fetchDataById(id);
    if(api.isPresent()){
-      ser.deleteDataById
+      ser.deleteData(id);
+      return "Data deleted Successfully";
+   }else{
+      return id+ "not found";
    }
 }
 

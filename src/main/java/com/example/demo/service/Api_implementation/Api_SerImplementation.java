@@ -25,5 +25,11 @@ public class Api_SerImplementation implements ApiService {
      public Optional<Api> fetchDataById(long id){
         return repo.findDataById(id);
     }
+    
+
+    @Override
+    public void deleteData(int id){
+        return repo.deleteById(id);
+    }
 
 }
