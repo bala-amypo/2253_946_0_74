@@ -41,14 +41,16 @@ public String UpdateDataById(@PathVariable int id ,@RequestBody Api a){
    a.setId(id);
    ser.createData(a);
 
-   return "Updated succesfully"
+   return "Updated succesfully";
 }else{
    return id + "Not found";
 
 }
 }
 @DeleteMapping("/deletedata/{id}")
-public String deleteDataById
+public String deleteDataById(@PathVariable int id){
+   Optional <Api>a
+}
 
 
 }
