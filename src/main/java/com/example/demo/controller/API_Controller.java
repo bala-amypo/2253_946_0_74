@@ -37,16 +37,18 @@ public class API_Controller{
 public String UpdateDataById(@PathVariable int id ,@RequestBody Api a){
    Optional<Api>api=ser.fetchDataById(id);
 
-   if(student.isPresent()){}
+   if(student.isPresent()){
    a.setId(id);
    ser.createData(a);
 
    return "Updated succesfully"
 }else{
-   
+   return id + "Not found";
 
 }
 }
+@DeleteMapping("/deletedata/{id}")
+public String deleteDataById
 
 
 }
