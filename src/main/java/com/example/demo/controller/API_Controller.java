@@ -35,10 +35,17 @@ public class API_Controller{
 }
 @PutMapping("/updatedata/{id}")
 public String UpdateDataById(@PathVariable int id ,@RequestBody Api a){
+   Optional<Api>api=ser.fetchDataById(id);
+
+   if(student.isPresent()){}
    a.setId(id);
    ser.createData(a);
 
    return "Updated succesfully"
+}else{
+   
+
+}
 }
 
 
