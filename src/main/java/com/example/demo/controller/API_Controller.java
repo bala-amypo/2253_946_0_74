@@ -35,11 +35,11 @@ public class API_Controller{
 }
 @PutMapping("/updatedata/{id}")
 public String UpdateDataById(@PathVariable int id ,@RequestBody Api a){
-   Optional<Api>api=ser.fetchDataById(id);
+   Optional<Api>api=Aser.fetchDataById(id);
 
    if(api.isPresent()){
    a.setId(id);
-   ser.createData(a);
+   Aser.createData(a);
 
    return "Updated succesfully";
 }else{
@@ -49,9 +49,9 @@ public String UpdateDataById(@PathVariable int id ,@RequestBody Api a){
 }
 @DeleteMapping("/deletedata/{id}")
 public String deleteDataById(@PathVariable int id){
-   Optional <Api>api=ser.fetchDataById(id);
+   Optional <Api>api=Aser.fetchDataById(id);
    if(api.isPresent()){
-      ser.deleteData(id);
+      Aser.deleteData(id);
       return "Data deleted Successfully";
    }else{
       return id+ "not found";
