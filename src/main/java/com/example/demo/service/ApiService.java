@@ -6,5 +6,6 @@ public interface ApiService {
    List<Api> fetchRecord();
    Optional<Api>fetchDataById(long id);
    String<Api>deleteDataById(long id);
+   String<Api>UpdateDataById(long id,Api a);
 
 }
